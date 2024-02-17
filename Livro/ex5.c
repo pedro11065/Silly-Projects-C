@@ -4,7 +4,7 @@
 // ACENTO BUGA
 
 #include <stdio.h>
-float main()
+int main()
 {
     float sal, novo_sal, porcent;
 
