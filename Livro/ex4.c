@@ -1,25 +1,20 @@
-//Faça um programa que receba o saãrio de um funcionário, 
-//calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.
-
-//ACENTO BUGA
-
 #include <stdio.h>
-float main()
+int main()
 {
-    float sal, novo_sal;
+    float nota1,nota2,peso1,peso2,calculo;
 
-    printf("digite seu salario atual:");
-    scanf("%f",&sal);
+    printf("digite a primeira nota:");
+    scanf("%f",&nota1);
 
-    novo_sal = sal/4 + sal;
+    printf("digite a segunda nota:");
+    scanf("%f",&nota2);
 
-    printf("Parabens!!! seu novo salario e de:%8.2f",novo_sal);
+    peso1 = 2;
+    peso2 = 3;
+
+    calculo = ((peso1 * nota1)+(peso2 * nota2))/(peso1 + peso2); 
+
+    printf("Sua media e de:%.2f",calculo);
 
     return 0;
 }
-
-
-
-
-
-

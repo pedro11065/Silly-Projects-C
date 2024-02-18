@@ -1,26 +1,19 @@
-// Faça um programa que receba três notas, calcule e mostre a média aritmética entre elas.
-
 #include <stdio.h>
-
 int main()
 {
-    int nota1, nota2, nota3;
-    float calculo;
+    int num1,num2,num3,multi;
 
-    printf("Quanto voce tirou na primeira prova?");
-    scanf("%d", &nota1);
+    printf("Digite um numero:");
+    scanf("%d",&num1);
 
-    printf("Quanto voce tirou na segunda prova?");
-    scanf("%d", &nota2);
+    printf("Digite um numero:");
+    scanf("%d",&num2);
+    
+    printf("Digite um numero:");
+    scanf("%d",&num3);
 
-    printf("Quanto voce tirou na terceira prova?");
-    scanf("%d", &nota3);
+    multi = num1 * num2 * num3;
 
-    calculo = (nota1 + nota2 + nota3)/3.0;
-
-    printf("A sua media e de: %1.2f",calculo);
-
+    printf("%d vezes %d vezes %d e igual a: %d",num1,num2,num3,multi); // mais de uma variavel na mesma printf
     return 0;
-
-
 }

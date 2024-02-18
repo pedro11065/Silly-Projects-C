@@ -1,23 +1,18 @@
-//Faça um programa que receba o salário de um funcionário e o percetual de aumento,
-// calcule e mostre o valor do aumento e o novo salario.
-
-// ACENTO BUGA
-
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    float sal, novo_sal, porcent;
+    float preco_antes, preco_depois;
+    int desconto;
 
+    printf("*** Calculadora de desconto *** \n");
+    printf("Digite o preco do produto que vai receber o desconto: ");
+    scanf("%f",&preco_antes);
 
-    printf("Digite o seu salario atual: ");
-    scanf("%f",&sal);
+    printf("De quanto sera o desconto? ");
+    scanf("%d",&desconto);
 
-    printf("De quantos porcento vai ser o aumento?:");
-    scanf("%f",&porcent);
+    preco_depois = preco_antes - ((preco_antes / 100) * desconto);
 
-    novo_sal = ((sal/100) * porcent) + sal;
-
-    printf("Seu novo salario sera de: R$ %.2f\n", novo_sal);
-
+    printf("O novo preco sera de:R$ %.2f",preco_depois);
     return 0;
 }
